@@ -19,7 +19,7 @@ Was genau ist für dich zu tun? Ganz einfach: Forke das offizielle Repository. L
 
 Im Popup klickst du dann auf deinen Account. Danach wechselt die Ansicht automatisch zu deinem geforkten Repo. Das kannst du jetzt auf deinen PC klonen (auf dem grünen Knopf "Code") und dort die Aufgabe bearbeiten, indem du die Methode "findeKaeferInBaum" in der Klasse "Main" implementierst.
 
-Wenn du fertig bist, pushed du deine Änderungen in dein geforktes Repo und schickst uns den Link (aus dem Browser) zu deinem Fork.
+Wenn du fertig bist, pushed du deine Änderungen in dein geforktes Repo und schickst uns den Link (aus dem Browser) zu deinem Fork an [peopleandculture@exxcellent.de](mailto:peopleandculture@exxcellent.de).
 
 ## Test
 
