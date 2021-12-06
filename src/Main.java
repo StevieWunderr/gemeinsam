@@ -22,9 +22,30 @@ public class Main {
         int anzahlKaefer = findeKaeferInBaum(baum);
         System.out.println("Der Baum hat " + anzahlKaefer + " Käfer");
     }
+    static int zaehler;
 
     static int findeKaeferInBaum(Baum baum) {
         // Bitte hier die Lösung eintragen
-        return 0;
+    	if (baum.getAeste()!=null) {
+    		for (int i = 0; i<baum.getAeste().size(); i++) {
+    			findeKaeferInAst(baum.getAeste().get(i));
+    		}
+    	}
+    	int ergebnis = zaehler;
+    	zaehler = 0;
+        return ergebnis;
+    }
+    
+    static void findeKaeferInAst (Ast ast) {
+    	for (int i = 0; i<ast.getBlaetter().size(); i++) {
+        	if (ast.getBlaetter().get(i).hatKaefer()) {
+        		zaehler++;
+        	}
+    	}
+    	if (ast.getAeste() != null) {
+    		for (int i = 0; i<ast.getAeste().size(); i++) {
+    			findeKaeferInAst(ast.getAeste().get(i));
+    		}
+    	}	
     }
 }
